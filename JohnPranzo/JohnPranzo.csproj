@@ -208,25 +208,38 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\John1.png" />
-    <Content Include="Resources\John10.png" />
-    <Content Include="Resources\John11.png" />
-    <Content Include="Resources\John12.png" />
-    <Content Include="Resources\John13.png" />
-    <Content Include="Resources\14.png" />
-    <Content Include="Resources\15.png" />
-    <Content Include="Resources\16.png" />
-    <Content Include="Resources\17.png" />
-    <Content Include="Resources\18.png" />
-    <Content Include="Resources\2.png" />
-    <Content Include="Resources\3.png" />
-    <Content Include="Resources\4.png" />
-    <Content Include="Resources\5.png" />
-    <Content Include="Resources\6.png" />
-    <Content Include="Resources\7.png" />
-    <Content Include="Resources\8.png" />
-    <Content Include="Resources\9.png" />
-    <Content Include="Resources\his_name.wav" />
+    <Content Include="ResourcerMosconi\dio.wav" />
+    <Content Include="ResourcerMosconi\Mosconi1.png" />
+    <Content Include="ResourcerMosconi\Mosconi10.png" />
+    <Content Include="ResourcerMosconi\Mosconi11.png" />
+    <Content Include="ResourcerMosconi\Mosconi12.png" />
+    <Content Include="ResourcerMosconi\Mosconi2.png" />
+    <Content Include="ResourcerMosconi\Mosconi3.png" />
+    <Content Include="ResourcerMosconi\Mosconi4.png" />
+    <Content Include="ResourcerMosconi\Mosconi5.png" />
+    <Content Include="ResourcerMosconi\Mosconi6.png" />
+    <Content Include="ResourcerMosconi\Mosconi7.png" />
+    <Content Include="ResourcerMosconi\Mosconi8.png" />
+    <Content Include="ResourcerMosconi\Mosconi9.png" />
+    <Content Include="ResourcesJohn\John1.png" />
+    <Content Include="ResourcesJohn\John10.png" />
+    <Content Include="ResourcesJohn\John11.png" />
+    <Content Include="ResourcesJohn\John12.png" />
+    <Content Include="ResourcesJohn\John13.png" />
+    <Content Include="ResourcesJohn\John14.png" />
+    <Content Include="ResourcesJohn\John15.png" />
+    <Content Include="ResourcesJohn\John16.png" />
+    <Content Include="ResourcesJohn\John17.png" />
+    <Content Include="ResourcesJohn\John18.png" />
+    <Content Include="ResourcesJohn\John2.png" />
+    <Content Include="ResourcesJohn\John3.png" />
+    <Content Include="ResourcesJohn\John4.png" />
+    <Content Include="ResourcesJohn\John5.png" />
+    <Content Include="ResourcesJohn\John6.png" />
+    <Content Include="ResourcesJohn\John7.png" />
+    <Content Include="ResourcesJohn\John8.png" />
+    <Content Include="ResourcesJohn\John9.png" />
+    <Content Include="ResourcesJohn\his_name.wav" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

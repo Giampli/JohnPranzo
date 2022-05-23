@@ -27,26 +27,22 @@ namespace JohnPranzo
 
         private double waitTime;
 
+        private UnmanagedMemoryStream audio => Resources.dio;
+
         private List<Bitmap> imgs;
         private List<Bitmap> origImgs = new List<Bitmap>()
         {
-            Resources._1,
-            Resources._2,
-            Resources._3,
-            Resources._4,
-            Resources._5,
-            Resources._7,
-            Resources._8,
-            Resources._9,
-            Resources._10,
-            Resources._11,
-            Resources._12,
-            Resources._13,
-            Resources._14,
-            Resources._15,
-            Resources._16,
-            Resources._17,
-            Resources._18
+            Resources.Mosconi1,
+            Resources.Mosconi2,
+            Resources.Mosconi3,
+            Resources.Mosconi4,
+            Resources.Mosconi5,
+            Resources.Mosconi7,
+            Resources.Mosconi8,
+            Resources.Mosconi9,
+            Resources.Mosconi10,
+            Resources.Mosconi11,
+            Resources.Mosconi12
         };
         
         
@@ -77,11 +73,13 @@ namespace JohnPranzo
                 var b = Utils.GetCursorPosition();
                 var c = new Point(Utils.GetCursorPosition().X - b.X, Utils.GetCursorPosition().Y - b.Y);
 
-                while (Math.Abs(c.X) < 50 && Math.Abs(c.Y) < 50)
+                while (Math.Abs(c.X) < 70 && Math.Abs(c.Y) < 70)
                 {
                     Thread.Sleep(100);
                     c = new Point(Utils.GetCursorPosition().X - b.X, Utils.GetCursorPosition().Y - b.Y);
                 }
+
+                Thread.Sleep(20000);
 
                 Task t = new Task(() =>
                 {
@@ -102,7 +100,7 @@ namespace JohnPranzo
                     Thread.Sleep(120);
                 }
 
-                Stream str = Resources.his_name; //new MemoryStream();
+                Stream str = audio; //new MemoryStream();
                 System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
                 snd.PlayLooping();
 
@@ -147,7 +145,7 @@ namespace JohnPranzo
 
                 var c = new Point(Utils.GetCursorPosition().X - startMouse.X, Utils.GetCursorPosition().Y - startMouse.Y);
 
-                if ((DateTime.Now - starTime).TotalSeconds > 5 && (Math.Abs(c.X) > 50 || Math.Abs(c.Y) > 50))
+                if ((DateTime.Now - starTime).TotalSeconds > 20 && (Math.Abs(c.X) > 70 || Math.Abs(c.Y) > 70))
                     Utils.RestartComputerApi();
                 //Utils.RestartComputerCommand();
             }
